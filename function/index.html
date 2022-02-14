@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        Tanggal : <input type="number" name="tanggal" id="tanggal">
+        Bulan : <input type="number" name="bulan" id="bulan">
+    </form>
+    
+    <button onclick="panggilZodiak()">Klik</button>
+    <script>
+        function tampil() {
+            alert('Belajar Function');
+        }
+
+        let isi = () => {
+                alert('belajar arrow function');
+        };
+
+        let bagi = (a, b) => {
+            let c = a/b;
+            alert(c);
+        };
+
+        function baru() {
+            bagi(5, 2);
+        }
+
+        let zodiakBaru = (tanggal, bulan) => {
+            if ((tanggal >= 21 && tanggal <= 31 && bulan == 3) || (tanggal >= 1 && tanggal <= 19 && bulan == 4)) {
+                hasil = "Aries";
+                alert(hasil);
+            } else if ((tanggal >= 20 && tanggal <= 31 && bulan == 4) || (tanggal >= 1 && tanggal <= 20 && bulan == 5)) {
+                hasil = "Taurus";
+                alert(hasil);
+            } else if ((tanggal >= 21 && tanggal <= 31 && bulan == 5) || (tanggal >= 1 && tanggal <= 20 && bulan == 6)) {
+                hasil = "Gemini";
+                alert(hasil);
+            } else if ((tanggal >= 22 && tanggal <= 31 && bulan == 6) || (tanggal >= 1 && tanggal <= 22 && bulan == 7)) {
+                hasil = "Cancer";
+                alert(hasil);
+            } else if ((tanggal >= 23 && tanggal <= 31 && bulan == 7) || (tanggal >= 1 && tanggal <= 22 && bulan == 8)) {
+                hasil = "Leo";
+                alert(hasil);
+            } else if ((tanggal >= 23 && tanggal <= 31 && bulan == 8) || (tanggal >= 1 && tanggal <= 22 && bulan == 9)) {
+                hasil = "Virgo";
+                alert(hasil);
+            } else if ((tanggal >= 23 && tanggal <= 31 && bulan == 9) || (tanggal >= 1 && tanggal <= 22 && bulan == 10)) {
+                hasil = "Libra";
+                alert(hasil);
+            } else if ((tanggal >= 23 && tanggal <= 31 && bulan == 10) || (tanggal >= 1 && tanggal <= 21 && bulan == 11)) {
+                hasil = "Scorpio";
+                alert(hasil);
+            } else if ((tanggal >= 22 && tanggal <= 31 && bulan == 11) || (tanggal >= 1 && tanggal <= 21 && bulan == 12)) {
+                hasil = "Sagitarius";
+                alert(hasil);
+            } else if ((tanggal >= 22 && tanggal <= 31 && bulan == 12) || (tanggal >= 1 && tanggal <= 19 && bulan == 1)) {
+                hasil = "Capricorn";
+                alert(hasil);
+            } else if ((tanggal >= 20 && tanggal <= 31 && bulan == 1) || (tanggal >= 1 && tanggal <= 18 && bulan == 2)) {
+                hasil = "Aquarius";
+                alert(hasil);
+            } else if ((tanggal >= 19 && tanggal <= 31 && bulan == 2) || (tanggal >= 1 && tanggal <= 20 && bulan == 3)) {
+                hasil = "Pisces";
+                alert(hasil);
+            } else {
+                hasil = "Tanggal dan bulan tidak ada !";
+                alert(hasil);
+            }
+        };
+
+        function kali() {
+            let a = 5;
+            let b = 3;
+            let c = a * b;
+
+            alert(c);
+        }
+
+        function kaliParam(a, b) {
+            let c = a * b;
+            alert(c);
+        }
+
+        
+        function panggilZodiak() {
+
+            let tanggal = document.querySelector('#tanggal').value;
+            let bulan = document.querySelector('#bulan').value;
+
+            zodiakBaru(tanggal, bulan);
+        }
+
+        function zodiak(tanggal, bulan) {
+            if ((tanggal >= 21 && tanggal <= 31 && bulan == 3) || (tanggal >= 1 && tanggal <= 19 && bulan == 4)) {
+                hasil = "Aries";
+                alert(hasil);
+            } else if ((tanggal >= 20 && tanggal <= 31 && bulan == 4) || (tanggal >= 1 && tanggal <= 20 && bulan == 5)) {
+                hasil = "Taurus";
+                alert(hasil);
+            } else if ((tanggal >= 21 && tanggal <= 31 && bulan == 5) || (tanggal >= 1 && tanggal <= 20 && bulan == 6)) {
+                hasil = "Gemini";
+                alert(hasil);
+            } else if ((tanggal >= 22 && tanggal <= 31 && bulan == 6) || (tanggal >= 1 && tanggal <= 22 && bulan == 7)) {
+                hasil = "Cancer";
+                alert(hasil);
+            } else if ((tanggal >= 23 && tanggal <= 31 && bulan == 7) || (tanggal >= 1 && tanggal <= 22 && bulan == 8)) {
+                hasil = "Leo";
+                alert(hasil);
+            } else if ((tanggal >= 23 && tanggal <= 31 && bulan == 8) || (tanggal >= 1 && tanggal <= 22 && bulan == 9)) {
+                hasil = "Virgo";
+                alert(hasil);
+            } else if ((tanggal >= 23 && tanggal <= 31 && bulan == 9) || (tanggal >= 1 && tanggal <= 22 && bulan == 10)) {
+                hasil = "Libra";
+                alert(hasil);
+            } else if ((tanggal >= 23 && tanggal <= 31 && bulan == 10) || (tanggal >= 1 && tanggal <= 21 && bulan == 11)) {
+                hasil = "Scorpio";
+                alert(hasil);
+            } else if ((tanggal >= 22 && tanggal <= 31 && bulan == 11) || (tanggal >= 1 && tanggal <= 21 && bulan == 12)) {
+                hasil = "Sagitarius";
+                alert(hasil);
+            } else if ((tanggal >= 22 && tanggal <= 31 && bulan == 12) || (tanggal >= 1 && tanggal <= 19 && bulan == 1)) {
+                hasil = "Capricorn";
+                alert(hasil);
+            } else if ((tanggal >= 20 && tanggal <= 31 && bulan == 1) || (tanggal >= 1 && tanggal <= 18 && bulan == 2)) {
+                hasil = "Aquarius";
+                alert(hasil);
+            } else if ((tanggal >= 19 && tanggal <= 31 && bulan == 2) || (tanggal >= 1 && tanggal <= 20 && bulan == 3)) {
+                hasil = "Pisces";
+                alert(hasil);
+            } else {
+                // hasil.style.color = "red";
+                hasil = "Tanggal dan bulan tidak  valid !";
+                alert(hasil);
+            }
+        }
+    </script>
+</body>
+</html>
